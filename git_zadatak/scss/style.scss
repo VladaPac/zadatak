@@ -1,0 +1,73 @@
+@import 'mixins';
+@import 'vars';
+
+
+
+*{
+	@include no-marg-pad; 
+	@include browser-rulles;
+}
+
+header{
+	h1{
+		padding:20px 0 0 20px;
+	}
+
+	p{
+		padding:10px 0 0 20px;
+		font-size: 1.5em;
+	}
+
+	nav{
+		width: 100%;
+		margin: 1em 0;
+
+		ul{
+			list-style-type: none;
+			text-align: right;
+			background: $bkg-nav;
+
+			li{
+				display: inline-block;
+				padding: 0.7em 20px;
+
+				&:hover{
+					background: #959595;
+				}
+
+				a{
+					color: #ffffff;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+aside{
+	width:25%;
+	display: inline-block;
+	text-align: left;
+
+	ul{list-style-type: none
+
+		li{
+			padding: 5px;
+		}
+	}
+}
+
+section{
+	width:70%;
+	display: inline-block;
+	//text-align: right;
+
+	h2{
+		padding: 5px;
+		text-align: right;
+	}
+
+	p{
+		padding: 5px;
+	}
+}
